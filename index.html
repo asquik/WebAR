@@ -30,7 +30,7 @@
 <body>
 
     <h1>Just 2d version of a model</h1>
-    <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+    <model-viewer src="Astronaut.glb"
         ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model"></model-viewer>
 
     <h1>3d model without AR</h1>
@@ -46,11 +46,11 @@
     </model-viewer>
 
     <h1>3d model with AR on the wall</h1>
-    <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
+    <model-viewer src="Astronaut.glb" ar-placement="wall" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
         alt="Astronaut 3d model" camera-controls auto-rotate ar></model-viewer>
 
     <h1>Poster is shown before the model is loaded or if model is missing</h1>
-    <model-viewer id="reveal" loading="eager" ar-placement="wall" camera-controls auto-rotate poster="Poster.png"
+    <model-viewer id="reveal" loading="eager"  camera-controls auto-rotate poster="Poster.png"
         src="dsdasd.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model">
     </model-viewer>
 
