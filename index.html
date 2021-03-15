@@ -15,6 +15,15 @@
         model-viewer#reveal {
             --poster-color: transparent;
         }
+
+        button#activateAR{
+            background-color: white;
+            border-radius: 4px;
+            border: none;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
     </style>
 </head>
 
@@ -28,10 +37,10 @@
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
         alt="Astronaut 3d model" camera-controls auto-rotate></model-viewer>
 
-    <h1>3d model with AR with button</h1>
+    <h1>3d model with AR with a custom button button</h1>
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
-        alt="Astronaut 3d model" camera-controls auto-rotate ar><button slot="ar-button"
-            style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+        alt="Astronaut 3d model" camera-controls auto-rotate ar>
+        <button id="ActivateAr" slot="ar-button">
             👋 Activate AR
         </button>
     </model-viewer>
