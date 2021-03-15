@@ -9,6 +9,7 @@
             width: 400px;
             height: 600px;
             margin: 0 auto;
+            --poster-image: "Poster.png";
         }
 
         model-viewer#reveal {
@@ -38,6 +39,10 @@
     <h1>Scene, Multiple objects</h1>
     <model-viewer src="Cubes.glb" skybox-image="hdr.jpg" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
         alt="Astronaut 3d model" camera-controls auto-rotate ar></model-viewer>
+
+        <h1>Placement on the wall</h1>
+    <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
+        alt="Astronaut 3d model" camera-controls auto-rotate ar ar-placement="wall"></model-viewer>
 </body>
 
 </html>
