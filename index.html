@@ -10,14 +10,22 @@
             height: 600px;
             margin: 0 auto;
         }
+        model-viewer#reveal {
+            --poster-color: transparent;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1>Model-viewer workaround<h1>
+    <h1>Just a poster<h1>
             <model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-                ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"></model-viewer>
+                ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model"
+                </model-viewer>
+
+    <h1>Page model viewer<h1>
+            <model-viewer id="reveal" loading="lazy" camera-controls auto-rotate src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+                ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model></model-viewer>
 </body>
 
 </html>
