@@ -32,18 +32,23 @@
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
         alt="Astronaut 3d model" camera-controls auto-rotate ar></model-viewer>
 
+    <h1>3d model with AR on the wall</h1>
+    <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
+        alt="Astronaut 3d model" camera-controls auto-rotate ar></model-viewer>
+
     <h1>Poster is shown before the model is loaded or if model is missing</h1>
-    <model-viewer id="reveal" loading="eager" camera-controls auto-rotate poster="Poster.png" src="dsdasd.glb"
-        ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model"></model-viewer>
+    <model-viewer id="reveal" loading="eager" ar-placemant="wall" camera-controls auto-rotate poster="Poster.png"
+        src="dsdasd.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model">
+    </model-viewer>
 
     <h1>Scene, Multiple objects</h1>
     <model-viewer src="Cubes.glb" skybox-image="hdr.jpg"
         ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model" camera-controls
         auto-rotate ar></model-viewer>
 
-    <h1>Placement on the wall</h1>
+    <h1>Scene Viewer App (videos, photos, help)</h1>
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
-        alt="Astronaut 3d model" camera-controls auto-rotate ar ar-placement="wall" ar-modes="scene-viewer webxr">
+        alt="Astronaut 3d model" camera-controls auto-rotate ar ar-modes="scene-viewer webxr">
     </model-viewer>
 </body>
 
