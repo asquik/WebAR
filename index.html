@@ -28,9 +28,13 @@
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
         alt="Astronaut 3d model" camera-controls auto-rotate></model-viewer>
 
-    <h1>3d model with AR</h1>
+    <h1>3d model with AR with button</h1>
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
-        alt="Astronaut 3d model" camera-controls auto-rotate ar></model-viewer>
+        alt="Astronaut 3d model" camera-controls auto-rotate ar><button slot="ar-button"
+            style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
+            👋 Activate AR
+        </button>
+    </model-viewer>
 
     <h1>3d model with AR on the wall</h1>
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
@@ -46,9 +50,10 @@
         ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz" alt="Astronaut 3d model" camera-controls
         auto-rotate ar></model-viewer>
 
-    <h1>Scene Viewer App (videos, photos, help)</h1>
+    <h1>Scene Viewer App (videos, photos, help, rotation available)</h1>
     <model-viewer src="Astronaut.glb" ios-src"https://github.com/asquik/WebAR/blob/main/flying_sacuer.usdz"
         alt="Astronaut 3d model" camera-controls auto-rotate ar ar-modes="scene-viewer webxr">
+
     </model-viewer>
 </body>
 
